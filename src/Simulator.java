@@ -35,7 +35,7 @@ public class Simulator extends PApplet {
         //  size(displayWidth, displayHeight);    // Fullskjerm
 
 
-        size(200, 200);
+        size(300, 300);
         stage = 1;
         smooth();
         background(255);
