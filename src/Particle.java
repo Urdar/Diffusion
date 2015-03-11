@@ -114,14 +114,21 @@ class Particle {
 
     public void move(int displayWidth, int displayHeight){
 
+        int xRand=0;
+        int yRand=0;
 
-        int xRand = rand.nextInt(3)-1;
-        int yRand = rand.nextInt(3)-1;
+        double r = Math.random();
+        if (r < 0.25) xRand--;
+        else if (r < 0.50) xRand++;
+        else if (r < 0.75) yRand--;
+        else if (r < 1.00) yRand++;
+
+
 
         // Kan den bevege seg dit?
 
         if ((this.xpos + xRand) >= 0 && (this.xpos + xRand) <= displayWidth){
-            // Den er innenfor display
+            // Den er innenfor display, bevege partikkel
             if (xRand == 1 || xRand == -1){
                 // Den har beveget seg i x-retning
                 this.xMoves++;

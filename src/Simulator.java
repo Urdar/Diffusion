@@ -13,16 +13,16 @@ import java.awt.geom.*;
 public class Simulator extends PApplet {
 
     public static void main(String args[]) {
-        PApplet.main(new String[]{"--present", "Simulator"});
+        PApplet.main(new String[]{ "Simulator"});
     }
 
-
+// "--present",
 
     // The current step of the simulation.
     private int step = 0;
     private int stage;
 
-    private static int particleAmount = 500;
+    private static int particleAmount = 100;
 
     boolean pause = false;
 
@@ -46,10 +46,7 @@ public class Simulator extends PApplet {
             particles[i] = new Particle((displayWidth / 2), (displayHeight / 2), (i % 255), (i % 255), (0));
             // Kommentar dfd f
         }
-
-
     }
-
 
     public void draw() {
         if (stage == 1) {
@@ -177,8 +174,8 @@ public class Simulator extends PApplet {
             String myString =   "Oppsummering\n" +
                                 "\nAntall partikler: " + particleAmount +
                                 "\nMulige steg: " + step +
-                                "\nSteg i x-retning: " + xMoves/particleAmount +
-                                "\nSteg i y-retning: " + yMoves/particleAmount
+                                "\nSteg i x-retning: " + (xMoves/particleAmount) +
+                                "\nSteg i y-retning: " + (yMoves/particleAmount)
 
 
                     ;
