@@ -13,10 +13,11 @@ import java.awt.geom.*;
 public class Simulator extends PApplet {
 
     public static void main(String args[]) {
-        PApplet.main(new String[]{ "Simulator"});
+  //      PApplet.main(new String[]{ "--present", "Simulator"}); // Fullscreen
+              PApplet.main(new String[]{"Simulator"});
     }
 
-// "--present",
+
 
     // The current step of the simulation.
     private int step = 0;

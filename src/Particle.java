@@ -133,7 +133,7 @@ class Particle {
                 // Den har beveget seg i x-retning
                 this.xMoves++;
             }
-            this.xpos =  xpos + xRand;
+            this.xpos =  xpos + xRand*10;
 
         }
 
@@ -143,7 +143,7 @@ class Particle {
                 // Den har beveget seg i y-retning
                 this.yMoves++;
             }
-            this.ypos =  ypos + yRand;
+            this.ypos =  ypos + yRand*10;
         }
 
 
