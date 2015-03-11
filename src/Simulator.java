@@ -45,6 +45,8 @@ public class Simulator extends PApplet {
         for (int i = 0; i < particles.length; i++) { // Initialize each particle using a for loop
             particles[i] = new Particle((displayWidth / 2), (displayHeight / 2), (i % 255), (i % 255), (i % 255));
             // Ny kommentar
+            particles[i] = new Particle((displayWidth / 2), (displayHeight / 2), (i % 255), (i % 255), (0));
+            // Kommentar dfd f
         }
 
 
