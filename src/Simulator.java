@@ -110,7 +110,9 @@ public class Simulator extends PApplet {
                     if (key == 'q' || key == 'Q') {
 
                         stage = 3;
+
                     }
+
 
                 }
 
@@ -181,6 +183,12 @@ public class Simulator extends PApplet {
 
                     ;
             text(myString, (displayWidth / 2), (displayHeight / 2));
+
+            if (keyPressed) {
+                if (key == 'r' || key == 'R') {
+                    stage = 2;
+                }
+            }
 
         }
 
