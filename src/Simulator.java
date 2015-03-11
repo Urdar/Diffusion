@@ -44,7 +44,7 @@ public class Simulator extends PApplet {
 //        Plassere ut numOfParticles antall partikler
         for (int i = 0; i < particles.length; i++) { // Initialize each particle using a for loop
             particles[i] = new Particle((displayWidth / 2), (displayHeight / 2), (i % 255), (i % 255), (i % 255));
-            // Kommentar dfd f
+            // Ny kommentar
         }
 
 
@@ -54,6 +54,7 @@ public class Simulator extends PApplet {
     public void draw() {
         if (stage == 1) {
             background(0);
+            // Enda en
             PFont myFont;
             myFont = createFont("Arial", 25);
             textFont(myFont);
