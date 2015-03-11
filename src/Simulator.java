@@ -23,7 +23,7 @@ public class Simulator extends PApplet {
     private int step = 0;
     private int stage;
 
-    private static int particleAmount = 100;
+    private static int particleAmount = 200;
 
     boolean pause = false;
 
@@ -32,20 +32,25 @@ public class Simulator extends PApplet {
 
     public void setup() {
 
-        size(displayWidth, displayHeight);    // Fullskjerm
+        //  size(displayWidth, displayHeight);    // Fullskjerm
 
-        //  size(300, 300);
+
+        size(200, 200);
         stage = 1;
         smooth();
         background(255);
         noStroke();
         fill(0, 255, 0);
-        frameRate(30);
+        frameRate(500);
 
 //        Plassere ut numOfParticles antall partikler
         for (int i = 0; i < particles.length; i++) { // Initialize each particle using a for loop
-            particles[i] = new Particle((displayWidth / 2), (displayHeight / 2), (i % 255), (i % 255), (0));
+           // particles[i] = new Particle((displayWidth / 2), (displayHeight / 2), (i % 255), (i % 255), (0));
+
+            particles[i] = new Particle((100), (100), (i % 255), (i % 255), (0));
             // Kommentar dfd f
+
+            //particle1 = new Particle((100), (100), (0), (i % 255), (0));
         }
     }
 
@@ -63,7 +68,7 @@ public class Simulator extends PApplet {
             text("displayWidth" + displayWidth + "displayHeight" + displayHeight, (displayWidth / 2), (displayHeight / 2)-100);
 
             fill(255, 255, 255);
-            text("Press 'R' to run, 'S' to stop, P to pause", (displayWidth / 2), (displayHeight / 2) + 40);
+            text("Press 'R' to run, 'S' to stop, P to pause and Q for statistics", (displayWidth / 2), (displayHeight / 2) + 40);
 
             if (keyPressed) {
                 if (key == 'r' || key == 'R') {
@@ -85,7 +90,7 @@ public class Simulator extends PApplet {
                     ellipse(particles[i].getXpos(), particles[i].getYpos(), particles[i].getWidth(), particles[i].getHeight());
 
 //         Flytte de
-                    particles[i].move(displayWidth, displayHeight);
+                    particles[i].move(300, 300);
 
                 }
                 step++;

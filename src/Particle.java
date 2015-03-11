@@ -29,8 +29,8 @@ class Particle {
         this.colG = colG;
         this.colB = colB;
 
-        this.width = 5;
-        this.height = 5;
+        this.width = 8;
+        this.height = 8;
 
         rand = new Random();
 
@@ -133,7 +133,7 @@ class Particle {
                 // Den har beveget seg i x-retning
                 this.xMoves++;
             }
-            this.xpos =  xpos + xRand*10;
+            this.xpos =  xpos + xRand;
 
         }
 
@@ -143,7 +143,7 @@ class Particle {
                 // Den har beveget seg i y-retning
                 this.yMoves++;
             }
-            this.ypos =  ypos + yRand*10;
+            this.ypos =  ypos + yRand;
         }
 
 
