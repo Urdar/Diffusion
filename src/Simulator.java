@@ -81,7 +81,7 @@ public class Simulator extends PApplet {
 
         if (stage == 2) {
 
-            if (pause != true) {
+            if (!pause) {
 
                 background(255);
 
@@ -98,12 +98,12 @@ public class Simulator extends PApplet {
                 if (keyPressed) {
                     if (key == 'p') {
 
-                        if (pause == false) {
-                            pause = true;
-                        } else {
-                            pause = false;
-                        }
-                    }
+                        if (!pause) {
+                                              pause = true;
+                } else {
+                    pause = false;
+                }
+            }
 
                     if (key == 's' || key == 'S') {
                         this.setup();
@@ -124,7 +124,7 @@ public class Simulator extends PApplet {
                 if (keyPressed) {
                     if (key == 'r') {
 
-                        if (pause == false) {
+                        if (!pause) {
                             pause = true;
                         } else {
                             pause = false;
