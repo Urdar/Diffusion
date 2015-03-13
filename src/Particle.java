@@ -41,77 +41,19 @@ class Particle {
         return xpos;
     }
 
- //   public void setXpos(float xpos) {
- //       this.xpos = xpos;
- //   }
+
 
     public float getYpos() {
         return ypos;
     }
 
-   // public void setYpos(float ypos) {
-   //     this.ypos = ypos;
-   // }
-
-    public int getColR() {
-        return colR;
-    }
-
-  //  public void setColR(int colR) {
-   //     this.colR = colR;
-   // }
-
-    public int getColG() {
-        return colG;
-    }
-
-   // public void setColG(int colG) {
-   //     this.colG = colG;
-   // }
-
-    public int getColB() {
-        return colB;
-    }
-
-   // public void setColB(int colB) {
-   //     this.colB = colB;
-   // }
-
-    public float getWidth() {
-        return width;
-    }
-
-   // public void setWidth(float width) {
-   //     this.width = width;
-   // }
-
-    public float getHeight() {
-        return height;
-    }
-
-  //  public void setHeight(float height) {
-   //     this.height = height;
-   // }
-
-  //  public void bounceBack(float height) {
-   //     this.height = height;
-   // }
-
     public int getxMoves() {
         return xMoves;
     }
 
-   // public void setxMoves(int xMoves) {
-   //     this.xMoves = xMoves;
-   // }
-
     public int getyMoves() {
         return yMoves;
     }
-
-   // public void setyMoves(int yMoves) {
-   //     this.yMoves = yMoves;
-   // }
 
     public void move(int displayWidth, int displayHeight){
 
@@ -123,8 +65,6 @@ class Particle {
         else if (r < 0.50) xRand++;
         else if (r < 0.75) yRand--;
         else if (r < 1.00) yRand++;
-
-
 
         // Kan den bevege seg dit?
 
