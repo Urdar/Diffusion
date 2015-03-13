@@ -51,6 +51,26 @@ class Particle {
         return xMoves;
     }
 
+    public float getWidth() {
+        return width;
+    }
+
+    public float getHeight() {
+        return height;
+    }
+
+    public int getColR() {
+        return colR;
+    }
+
+    public int getColG() {
+        return colG;
+    }
+
+    public int getColB() {
+        return colB;
+    }
+
     public int getyMoves() {
         return yMoves;
     }
